@@ -1,9 +1,3 @@
-
-
-
-
-
-
 window.addEventListener('scroll', () => {
     let scrollDist = window.scrollY;
 
@@ -39,7 +33,19 @@ window.addEventListener('scroll', () => {
         headerMenuSpan.classList.remove('blackbg');
         headerMenuSpan.classList.add('menu__span');
     }
+    function onFooterTranslate() {
 
+        if (scrollDist >= 60) {
+            footerTranslate.classList.add('tran-bg');
+            planet.src="images/planetDark.png";
+
+        }
+        else if (scrollDist <= 60) {
+            footerTranslate.classList.remove('tran-bg');
+            planet.src="images/planetWhite.png";
+        }
+
+    }
 
 });
 
@@ -47,19 +53,7 @@ let footerTranslate = document.querySelector('.footer__translate');
 let planet = document.querySelector('.footer__planet');
 let scrollDist = window.scrollY;
 
-function onFooterTranslate() {
 
-    if (scrollDist >= 60) {
-        footerTranslate.classList.add('tran-bg');
-        planet.src="images/planetDark.png";
-
-    }
-    else if (scrollDist <= 60) {
-        footerTranslate.classList.remove('tran-bg');
-        planet.src="images/planetWhite.png";
-    }
-
-}
 
 function offFooterTranslate() {
     if (scrollDist <= 60) {
@@ -70,31 +64,4 @@ function offFooterTranslate() {
         planet.src="images/planetWhite.png"
     }
 
-}
-
-
-
-window.onload = function() {
-    let preloader = document.getElementById('preloader');
-    preloader.style.display = 'none';
-
-}
-
-let btn = document.querySelector('button');
-let windowHeIGHT = document.documentElement.clientHeight;
-// alert(windowHeIGHT);
-
-
-// document.addEventListener('wheel', function() {
-//     // останавливаем поведение по умолчанию, то есть прокрутку
-//     window.scrollBy(0,100vh);
-// });
-
-// document.addEventListener('scroll', function() {
-//     // получаем высоту элемента, на котором произошло событие
-//     window.scrollBy(0,100vh);
-// });
-
-function scrollTo(hash) {
-    location.hash = "#" + hash;
 }

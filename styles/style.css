@@ -2,6 +2,7 @@ body {
   margin: 0;
   color: #fff;
   height: 200vh;
+  overflow-x:  hidden;
 }
 
 a {
@@ -11,6 +12,10 @@ a {
 
 .black {
   color: #121212;
+}
+
+.black:hover > .footer__translate {
+  background: #000;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -24,7 +29,12 @@ h1 {
 
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px rgba(0,0,0,1);
+}
 
+.gradient {
+  background: linear-gradient(270deg, #ddee44,  #ff4420);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Preloader */
@@ -132,7 +142,6 @@ h1 {
   opacity: 9999;
   animation-name: header;
   animation-duration: 2s;
-  top: -10px;
   z-index: 999999;
 }
 
@@ -193,14 +202,16 @@ h1 {
 /* MENU */
 .menu {
   position: relative;
-  left: 20px;
+  top: 10px;
+  left: -20px;
 }
 
 .menu__btn {
   position: relative;
-  width: 70px;
-  height: 50px;
-  top: 35px;
+  width: 36px;
+  height: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .menu__text {
@@ -208,11 +219,9 @@ h1 {
   opacity: 0;
   transition: opacity .3s;
   position: absolute;
-  top: -28px;
   left: -50px;
+  padding-right: 11px;
 }
-
-
 
 
 .menu__span::before,
@@ -250,12 +259,12 @@ h1 {
 }
 
 .menu__btn span::before {
-  transform: translate(-8px, -7px);
+  transform: translate(-8px, -8px);
 }
 
 .menu__btn span::after {
-  transform: translate(9px, 7px);
-  width: 10px;
+  transform: translate(9px, 8px);
+  width: 50%
 
 
 }
@@ -520,17 +529,48 @@ h1 {
   background: #fff;
 }
 
+.biography__inner {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.biography__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 70px;
+  color: #000;
+  width: 600px;
+}
+
+.biography__man {
+  height: 500px;
+  background: linear-gradient(45deg, #e5ff00, #e5ff00, #ff2a00, #ff2a00);
+  background-size: 200% 200%;
+  animation: linearGradient 5s ease infinite;
+}
+
+#biography__city {
+  position: relative;
+  left: auto;
+  border: 2px dashed #000;
+  margin: 2px 0px;
+  padding: 2px 15px;
+}
 
 
-
-
-
-
-
-
-
-
-
+#city__hint {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 130px;
+  background-image: url(../images/city.jpg);
+  background-size: 100%;
+}
+/*
+#biography__city:hover #city__hint {
+  display: block;
+} */
 
 
 
