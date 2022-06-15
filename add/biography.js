@@ -27,8 +27,8 @@ biographyCity.onmousemove = (e) => {
     const x = e.offsetX;
     const y = e.offsetY;
 
-    cityHint.style.left = x - -10 + 'px';
-    cityHint.style.top = y - 155 + 'px';
+    cityHint.style.left = x  + 'px';
+    cityHint.style.top = y - 160 + 'px';
     console.log(cityHint.style.left);
     console.log(cityHint.style.top);
 }

@@ -566,6 +566,8 @@ h1 {
   height: 130px;
   background-image: url(../images/city.jpg);
   background-size: 100%;
+  pointer-events: none;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 #biography__city:hover #city__hint {
