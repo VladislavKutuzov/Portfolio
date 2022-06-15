@@ -548,11 +548,11 @@ h1 {
   background: linear-gradient(45deg, #e5ff00, #e5ff00, #ff2a00, #ff2a00);
   background-size: 200% 200%;
   animation: linearGradient 5s ease infinite;
+  transform: scaleX(-1);
 }
 
 #biography__city {
   position: relative;
-  left: auto;
   border: 2px dashed #000;
   margin: 2px 0px;
   padding: 2px 15px;
@@ -567,10 +567,10 @@ h1 {
   background-image: url(../images/city.jpg);
   background-size: 100%;
 }
-/*
+
 #biography__city:hover #city__hint {
   display: block;
-} */
+}
 
 
 
