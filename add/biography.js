@@ -22,7 +22,7 @@ const cityHint = document.getElementById('city__hint');
 
 
 biographyCity.onmousemove = (e) => {
-    cityHint.style.display = 'block';
+    cityHint.style.opacity = '1';
 
     const x = e.offsetX;
     const y = e.offsetY;
@@ -34,7 +34,7 @@ biographyCity.onmousemove = (e) => {
 }
 
 biographyCity.addEventListener('mouseout', function() {
-    cityHint.style.display = 'none';
+    cityHint.style.opacity = '0';
 });
 
 
