@@ -568,7 +568,8 @@ h1 {
   pointer-events: none;
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
   opacity: 0;
-  transition: opacity .3s;
+  transform: scaleX(20deg);
+  transition: opacity .3 transform .5s;
 }
 
 #biography__city:hover #city__hint {
