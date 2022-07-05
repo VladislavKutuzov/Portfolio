@@ -24,11 +24,8 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
   font-family: "Russo One", sans-serif;
-  color: #fff;
+  color: #000;
   font-size: 70px;
-
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px rgba(0,0,0,1);
 }
 
 .gradient {
@@ -577,4 +574,60 @@ h1 {
 }
 
 
+/* Skills
+======================== */
+.skills {
+  display: block;
+  height: 100vh;
+  background: #fff;
+}
 
+.skills__inner {
+  padding: 100px 0;
+  height: 100vh;
+}
+
+.skills__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 70px;
+  color: #000;
+}
+
+.skills__list {
+  margin: 50px 0;
+}
+
+.skills__line {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 30px;
+  margin: 7px 0;
+}
+/*
+#html {
+  color: #f25320;
+}
+
+#css {
+  color: #264de4;
+} */
+
+#js {
+  color: #ead41c;
+}
+
+#react {
+  color: #5ccfee;
+}
+
+#bootstrap {
+  color: #894c9c;
+}
+
+#sass {
+  color: #c16291;
+}
+
+#git {
+  color: #e44c30;
+}
